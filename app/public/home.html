@@ -1,45 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/style.css">
-    <title>Friend Finder </title>
+    <link rel="stylesheet" href="style">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="jumbotron">
-            <img src="/assets/logo.png" alt="logo">
-            <h1>Friend Compatibility </h1>
-            <p>Answer a couple of questions....</p>
-            <p>We'll match you with the most compatible friend!</p>
-            <p>
-                <a class="btn btn-primary btn-lg" href="/survey" role="button">
-                    <span class="glyphicon glyphicon-list" aria-hidden="true"></span> Go to Questions</a>
-            </p>
-        </div>
-                    <ul>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="/api/friends">API Friends List</a>
-                        </li>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="https://github.com/frankyviray/FriendFinder">GitHub Repo</a>
-                        </li>
-                    </ul>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="footer-copyright">
-                        <div class="container">
-                            <a class="grey-text text-lighten-4 right" href="https://github.com/frankyviray">Reference Work</a>
-                        </div>
-                    </div>
-                    </footer>
+
+        <h1>Welcome to Friend-Finder</h1>
+        <p>Answer a couple of questions and we'll help you find your new best friend!</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="./survey" role="button">Click to take the survey!</a>
+        </p>
+
+        <a href="/api">Friends API</a> |
+        <a href="https://github.com/frankyviray/FriendFinder">GitHub </a>
+
+    </div>
+
 </body>
 
 </html>

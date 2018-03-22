@@ -1,302 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <title>Survery - FriendSpace</title>
+    <link rel="stylesheet" href="/style2">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
     <div class="container">
-        <div class="page-header">
-            <h1>Questions</h1>
-        </div>
-        <form>
-            <div class="form-group">
-                <h2>About You!</h2>
-                <label for="name">Name (Required)</label>
-                <input type="name" class="form-control" id="name" placeholder="Name">
-            </div>
-            <div class="form-group">
-                <label for="image">Link to Profile Image (Required)</label>
-                <input type="image-url" class="form-control" id="image" placeholder="URL">
-            </div>
-        </form>
-        <form>
-            <h2>Questions</h2>
-            <p>On a scale of 1-5, with 1 being "Strongly Disagree" and 5 being "Strongly Agree..."</p>
-            <ol>
-                <li>
-                    <form>
-                        <p>Your mind is always buzzing with unexplored ideas and plans.</p>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio1" value="1"> 1
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio2" value="2"> 2
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="3"> 3
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="4"> 4
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="5"> 5
-                        </label>
-                    </form>
-                </li>
-                <li>
-                    <form>
-                        <p>Generally speaking, you rely more on your experience than your imagination.</p>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio1" value="1"> 1
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio2" value="2"> 2
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="3"> 3
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="4"> 4
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="5"> 5
-                        </label>
-                    </form>
-                </li>
-                <li>
-                    <form>
-                        <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio1" value="1"> 1
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio2" value="2"> 2
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="3"> 3
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="4"> 4
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="5"> 5
-                        </label>
-                    </form>
-                </li>
-                <li>
-                    <form>
-                        <p>You rarely do something just out of sheer curiosity.</p>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio1" value="1"> 1
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio2" value="2"> 2
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="3"> 3
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="4"> 4
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="5"> 5
-                        </label>
-                    </form>
-                </li>
-                <li>
-                    <form>
-                        <p>People can rarely upset you.</p>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio1" value="1"> 1
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio2" value="2"> 2
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="3"> 3
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="4"> 4
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="5"> 5
-                        </label>
-                    </form>
-                </li>
-                <li>
-                    <form>
-                        <p>It is often difficult for you to relate to other people’s feelings.</p>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio1" value="1"> 1
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio2" value="2"> 2
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="3"> 3
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="4"> 4
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="5"> 5
-                        </label>
-                    </form>
-                </li>
-                <li>
-                    <form>
-                        <p>In a discussion, truth should be more important than people’s sensitivities.</p>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio1" value="1"> 1
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio2" value="2"> 2
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="3"> 3
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="4"> 4
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="5"> 5
-                        </label>
-                    </form>
-                </li>
-                <li>
-                    <form>
-                        <p>You rarely get carried away by fantasies and ideas.</p>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio1" value="1"> 1
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio2" value="2"> 2
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="3"> 3
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="4"> 4
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="5"> 5
-                        </label>
-                    </form>
-                </li>
-                <li>
-                    <form>
-                        <p>You think that everyone’s views should be respected regardless of whether they are supported by facts
-                            or not.</p>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio1" value="1"> 1
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio2" value="2"> 2
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="3"> 3
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="4"> 4
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="5"> 5
-                        </label>
-                    </form>
-                </li>
-                <li>
-                    <form>
-                        <p>You feel more energetic after spending time with a group of people.</p>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio1" value="1"> 1
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio2" value="2"> 2
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="3"> 3
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="4"> 4
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio inlineRadio3" value="5"> 5
-                        </label>
-                    </form>
-                </li>
-            </ol>
-        </form>
-        <p>
-            <button type="button" id="submit-btn" class="btn btn-primary">Submit</button>
-        </p>
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog" style="width:330px">
+        <h1>Answer the Questions Below to Find Your New BEST FRIEND!</h1>
+        <hr>
+        <h3>About You</h3>
+        <hr>
+        <h4>Name (required)</h4>
+        <input type="text" id="name" class="form-control" required>
+        <h4>Link to a photo image</h4>
+        <input type="text" id="photo" class="form-control" required>
+        <hr>
+        <h3>
+            <strong>Question 1</strong>
+        </h3>
+        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+        <select class="chosen-select" id="q1">
+            <option value="">Choose an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>
+            <strong>Question 2</strong>
+        </h3>
+        <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+        <select class="chosen-select" id="q2">
+            <option value="">Choose an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>
+            <strong>Question 3</strong>
+        </h3>
+        <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        <select class="chosen-select" id="q3">
+            <option value="">Choose an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>
+            <strong>Question 4</strong>
+        </h3>
+        <h4>You rarely do something just out of sheer curiosity.</h4>
+        <select class="chosen-select" id="q4">
+            <option value="">Choose an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>
+            <strong>Question 5</strong>
+        </h3>
+
+        <h4>People can rarely upset you.</h4>
+        <select class="chosen-select" id="q5">
+            <option value="">Choose an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>
+            <strong>Question 6</strong>
+        </h3>
+
+        <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+        <select class="chosen-select" id="q6">
+            <option value="">Choose an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 7</strong>
+        </h3>
+        <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+        <select class="chosen-select" id="q7">
+            <option value="">Choose an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <button type="submit" class="btn btn-success btn-lg btn-block" id="submit">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit</button>
+        <br>
+        <br>
+        <br>
+        <div id="results-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h3 class="modal-title" id="myModalLabel"></h3>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h2 class="modal-title">
+                            Best Match
+                        </h2>
                     </div>
                     <div class="modal-body">
+                        <h2 id="match-name"></h2>
+                        <img id="match-img" src="" alt="">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
+
             </div>
         </div>
-        <!-- END Modal -->
+    </div>
 
-        <script type="text/javascript">
-
-            $("#submit-btn").on("click", function (event) {
-                event.preventDefault();
-                // Creates an array of answers
-                var scores = [];
-                $("input:radio[name=inlineRadioOptions]:checked").each(function () {
-                    scores.push($(this).val());
-                });
-                //console.log(scores);
-
-                // Creates an object w/scores array created above
-                var userInput = {
-                    name: $("#name").val().trim(),
-                    photo: $("#image").val().trim(),
-                    scores: scores
-                };
-                //console.log(userInput);
-
-                // POST: sends the object to the backend, 'data' is response sent from the backend
-                $.post("/api/friends", userInput,
-                    function (data) {
-                        //console.log(data);
-                        if (data) {
-                            $("#myModalLabel").append("Match Found!");
-                            $(".modal-body").html("<img src='" + data.image + "' width='300'>");
-                            $(".modal-body").append("<h3>" + data.name + "</h3>");
-                            $("#myModal").modal("toggle");
-                        }
-                        else {
-                            $("#myModalLabel").append("Sorry no matches");
-                            $("#myModal").modal("toggle");
-                        }
-                    });
-
-            });
-
-        </script>
+    <script>
+        var answers = false;
+        var name = false;
+        var photo = false;
+        $("#submit").on("click", function () {
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val()]
+            }
+            if (newFriend.name.length > 0 && newFriend.photo.length > 0) {
+                console.log("both are greater than 0")
+                name = true;
+                photo = true;
+            } else {
+                alert("please fill out the name and photo sections")
+            }
+            checkComplete(newFriend.scores)
+            if (answers && name && photo) {
+                console.log("inside of if state")
+                $.post("/api/friends", newFriend).then(function (data) {
+                    console.log(data)
+                    $("select").prop("selectedIndex", 0);
+                    $("#name").val("");
+                    $("#photo").val("")
+                    $("#match-name").text(data.name);
+                    $("#match-img").attr("src", data.photo);
+                    $('#results-modal').modal("show")
+                })
+            }
+        });
+        function checkComplete(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] > 0) {
+                    continue
+                }
+                else {
+                    alert("fill out all questions please")
+                    return
+                }
+            }
+            answers = true;
+        }
+    </script>
 </body>
 
 </html>

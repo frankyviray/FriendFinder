@@ -1,0 +1,12 @@
+img {
+    vertical-align: top;
+    width: 6%;
+}
+
+h1 {
+    display: inline;
+}
+
+.jumbotron {
+    margin-top: 100px;
+}
